@@ -21,16 +21,16 @@ ja:
   activerecord:
     attributes:
       spree/address:
-        address1: "住所(県・市・町・丁目・番地)"
-        address2: "住所(ビル名・号・室・部署)"
-        city: "市名"
+        address1: "住所1"
+        address2: "住所2"
+        city: "市区町村"
         country: "国"
         first_name_begins_with: "名が何から始まる"
         firstname: "名"
-        last_name_begins_with: "性が何から始まる"
+        last_name_begins_with: "姓が何から始まる"
         lastname: "姓"
         phone: "電話番号"
-        state: "県・州"
+        state: "都道府県（州）"
         zipcode: "郵便番号"
       spree/order/bill_address:
         address1: "請求先の住所"
@@ -67,13 +67,16 @@ ja:
         quantity: "個数"
       spree/order:
         checkout_complete: "注文の受け付けを完了しました"
-        completed_at: "注文確定時刻"
+        completed_at: "注文日時"
         coupon_code: "クーポン・コード"
+        email: "メールアドレス"
         ip_address: "IPアドレス"
         item_total: "合計"
-        number: "数"
+        number: "注文番号"
         special_instructions: "詳細・説明・コメント"
-        state: "都道府県（州）"
+        state: "状態"
+        payment_state: "支払い状態"
+        shipment_state: "配送状態"
         total: "合計"
       spree/product:
         available_on: "販売開始日"
@@ -93,7 +96,7 @@ ja:
       spree/product_scope:
         arguments: "条件・引数"
         description: "説明"
-      promotion:
+      spree/promotion:
         code: "コード"
         description: "説明"
         expires_at: "有効期限"
@@ -219,6 +222,8 @@ ja:
   add: "追加"
   add_category: "カテゴリーの追加"
   add_country: "国の追加"
+  add_new_header: "新規ヘッダの追加"
+  add_new_style: "新規スタイルの追加"
   add_option_type: "オプション類を追加"
   add_option_types: "複数のオプション類を追加"
   add_option_value: "オプションの値を追加"
@@ -269,6 +274,10 @@ ja:
   are_you_sure_you_want_to_capture: "キャプチャを行いますか?"
   assign_taxon: "分類群を割り当てる"
   assign_taxons: "分類群を割り当てる"
+  attachment_path: "Attachmentのパス"
+  attachment_default_url: "AttachmentのデフォルトURL"
+  attachment_default_style: "Attachmentのデフォルトスタイル"
+  attachment_styles: "Attachmentスタイルのリスト"
   authorization_failure: "認証に失敗しました"
   authorized: "認証されました"
   available_on: "発売開始日・入荷日"
@@ -312,7 +321,7 @@ ja:
   charges: "課金"
   checkout: "精算"
   cheque: "小切手"
-  city: "都市名"
+  city: "市区町村"
   clone: "複製"
   code: "コード"
   combine: "結合"
@@ -331,7 +340,7 @@ ja:
   cost_price: "原価"
   count: "数"
   count_of_reduced_by: "'%{name}'の数を%{count}つ減らしました。"
-  country: "国名"
+  country: "国"
   country_based: "国による区別"
   coupon: "クーポン"
   coupon_code: "クーポンコード"
@@ -357,6 +366,10 @@ ja:
   date_range: "日範囲"
   debit: "負債"
   default: "初期設定"
+  default_seo_title: "デフォルトのSEOタイトル"
+  default_meta_keywords: "デフォルトのメタキーワード"
+  default_meta_description: "デフォルトのメタデスクリプション"
+  defined_paperclip_styles: "定義されたPaperclipのスタイル"
   delete: "削除"
   delivery: "配送/お届け"
   depth: "奥行き"
@@ -429,7 +442,7 @@ ja:
   finalize: "確定"
   finalized_payments: "確定された決済"
   first_item: "一品目の値段"
-  first_name: "名前"
+  first_name: "名前（名）"
   first_name_begins_with: "名の始まりが"
   flat_percent: "定率"
   flat_rate_amount: "定格"
@@ -466,6 +479,10 @@ ja:
   icon: "アイコン"
   icons_by: "アイコンの作成者:"
   image: "画像"
+  image_settings: "画像設定"
+  image_settings_description: "画像に関する各種設定"
+  image_settings_updated: "Image Settings successfully updated."
+  image_settings_warning: "You will need to regenerate thumbnails if you update the paperclip styles. Use rake paperclip:refresh:thumbnails to do this."
   images: "画像"
   images_for: "画像"
   in_progress: "処理中"
@@ -495,7 +512,7 @@ ja:
   last_5_orders: "最後の5件の注文"
   last_7_days: "先週"
   last_month: "先月"
-  last_name: "名字"
+  last_name: "名前（姓）"
   last_name_begins_with: "姓の始まりが"
   last_year: "去年"
   leave_blank_to_not_change: "(変更したくない場合は何も入力しないで下さい)"
@@ -617,19 +634,19 @@ ja:
   order_not_in_system: "その注文番号はこのサイトで有効ではありません。"
   order_number: "注文"
   order_operation_authorize: "許可する"
-  order_processed_but_following_items_are_out_of_stock: "Your order has been processed, but following items are out of stock:"
-  order_processed_successfully: "Your order has been processed successfully"
-  order_state: # keys correspond to Checkout state names:
+  order_processed_but_following_items_are_out_of_stock: "注文が完了しました。しかし、以下のアイテムが在庫切れです:"
+  order_processed_successfully: "注文が完了しました。"
+  order_state:
     # keys correspond to Checkout state names:
-    address: address
+    address: "住所"
     adjustments: adjustments
     awaiting_return: awaiting return
     canceled: canceled
-    cart: cart
+    cart: "カート"
     complete: "完了"
-    confirm: confirm
-    delivery: delivery
-    payment: payment
+    confirm: "確認"
+    delivery: "配送"
+    payment: "支払い"
     resumed: resumed
     returned: returned
   order_summary: Order Summary
@@ -681,12 +698,13 @@ ja:
   phone: "電話番号"
   place_order: "注文を送信する"
   please_create_user: "アカウントを登録して下さい"
-  powered_by: "このサイトの原動力が"
+  powered_by: "Powered by"
   presentation: "表示名"
   preview: "プレビュー"
   previous: "前へ"
   price: "価格"
-  price_bucket: Price Bucket
+  price_sack: Price Sack
+  price_range: 価格帯
   price_with_vat_included: "%{price} (inc. VAT)"
   problem_authorizing_card: "Problem authorizing credit card"
   problem_capturing_card: "Problem capturing credit card"
@@ -892,6 +910,11 @@ ja:
   rma_value: RMA Value
   roles: "役割"
   rules: "ルール"
+  s3_access_key: "S3アクセスキー"
+  s3_bucket: "S3バケット"
+  s3_secret: "S3秘密鍵"
+  s3_used_for_product_images: "商品画像にS3を使う"
+  s3_not_used_for_product_images: "商品画像にS3を使わない"
   sales_tax: "消費税"
   sales_total: "売上げ合計"
   sales_total_description: "全注文の売上合計"
@@ -974,10 +997,14 @@ ja:
   spree:
     date: "日付"
     time: "時間"
+  spree_alert_checking: "Check for Spree security and release alerts"
+  spree_alert_not_checking: "Not checking for Spree security and release alerts"
   spree_gateway_error_flash_for_checkout: "There was a problem with your payment information. Please check your information and try again."
   ssl_will_be_used_in_development_and_test_modes: "必要に応じて開発モードとテストモードにSSLが使用されます"
+  ssl_will_be_used_in_staging_mode: "ステージングモードではSSLが使用されます"
   ssl_will_be_used_in_production_mode: "プロダクションモードではSSLが使用されます"
   ssl_will_not_be_used_in_development_and_test_modes: "必要性がない限り開発モードとテストモードにSSLが使用されません"
+  ssl_will_not_be_used_in_staging_mode: "ステージングモードではSSLが使用されません"
   ssl_will_not_be_used_in_production_mode: "プロダクションモードではSSLが使用されません"
   start: "始め"
   start_date: "有効開始日付"
@@ -1045,7 +1072,7 @@ ja:
   update_password: "パスワードを更新してログインする"
   updated_successfully: "更新しました"
   updating: "更新中"
-  usage_limit: "使用限界"
+  usage_limit: "使用制限"
   use_as_shipping_address: "配送住所を使用する"
   use_billing_address: "請求先住所を使用する"
   use_different_shipping_address: "別の住所を使用する"
