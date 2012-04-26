@@ -9,6 +9,7 @@ en:
   account_updated: "Account updated!"
   action: Action
   actions:
+    cancel: Cancel
     create: Create
     destroy: Destroy
     list: List
@@ -1046,6 +1047,13 @@ en:
   vat: "VAT"
   version: Version
   view_shipping_options: "View shipping options"
+  views:
+    pagination:
+      truncate: "&hellip;"
+      first: First
+      previous: Previous
+      next: Next
+      last: Last
   void: Void
   website: Website
   weight: Weight

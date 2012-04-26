@@ -3,86 +3,86 @@ ja:
   activerecord:
     attributes:
       spree/promotion:
-        advertise: Advertise
+        advertise: "表示する"
         code: "コード"
         description: "説明"
         event_name: "イベント名"
         expires_at: "有効期限"
         name: "名称"
-        path: Path
+        path: "パス"
         starts_at: "開始日時"
         usage_limit: "使用可能回数"
-  add_action_of_type: Add action of type
-  add_rule_of_type: Add rule of type
+  add_action_of_type: 次のタイプのアクションを追加する
+  add_rule_of_type: 次のタイプのルールを追加する
   coupon: "クーポン"
   coupon_code: "クーポンコード"
-  editing_promotion: Editing Promotion
+  editing_promotion: プロモーションの編集
   events:
     spree:
       checkout:
-        coupon_code_added: Coupon code added
+        coupon_code_added: クーポンコード追加
       content:
-        visited: Visit static content page
-  expiry: Expiry
+        visited: 静的コンテンツページの訪問
+  expiry: 終了条件
   free_shipping: "送料無料"
   item_total_rule:
     operators:
-      gt: greater than
-      gte: greater than or equal to
+      gt: が次の値よりも大きい
+      gte: が次の値以上
   landing_page_rule:
-    path: Path
-  new_promotion: New Promotion
-  no_rules_added: No rules added
+    path: パス
+  new_promotion: "新規プロモーション"
+  no_rules_added: "ルールが追加されていません"
   product_rule:
-    choose_products: Choose products
-    label: "Order must contain %{select} of these products"
-    match_any: at least one
-    match_all: all
+    choose_products: "商品を選択してください"
+    label: "注文が以下の商品を%{select}含まなければならない"
+    match_any: 少なくとも一つ
+    match_all: すべて
     product_source:
-      group: From product group
-      manual: Manually choose
-  promotion_not_found: The coupon code you entered doesn't exist. Please try again.
-  promotion: Promotion
-  promotion_action: Promotion Action
-  promotion_actions: Actions
+      group: "商品グループから"
+      manual: "手動で選択"
+  promotion_not_found: "入力されたクーポンコードは存在しません。再度入力してください。"
+  promotion: プロモーション
+  promotion_action: プロモーションアクション
+  promotion_actions: アクション
   promotion_action_types:
     create_adjustment:
-      name: Create adjustment
-      description: Creates a promotion credit adjustment on the order
+      name: "値引き"
+      description: "注文に対して値引きする"
     create_line_items:
-      name: Create line items
-      description: Populates the cart with the specified variants and quantities
+      name: "商品追加"
+      description: "特定の種類の商品をカートに加える"
     give_store_credit:
-      name: Give store credit
-      description: Gives the user store credit of the amount specified
+      name: "ストアクレジット付与"
+      description: "指定された額のストアクレジットをユーザーに与える"
   promotion_form:
     match_policies:
-      all: Match all of these rules
-      any: Match any of these rules
-  promotions: Promotions
-  promotions_description: Manage offers and coupons with promotions
-  promotion_rule: Promotion Rule
+      all: 以下のルールすべてに該当する
+      any: 以下のルールのいずれかに該当する
+  promotions: "プロモーション"
+  promotions_description: "特価提供・クーポンの管理"
+  promotion_rule: "プロモーションルール"
   promotion_rule_types:
     first_order:
       name: "最初の注文"
-      description: "最初の注文でなければならない"
+      description: "最初の注文である"
     item_total:
       name: "合計個数"
-      description: Order total meets these criteria
+      description: "合計個数"
     landing_page:
       name: "ランディングページ"
-      description: Customer must have visited the specified page
+      description: "お客様が特定のページを訪問済みである"
     product:
       name: "商品"
-      description: Order includes specified product(s)
+      description: "注文に特定の商品を含む"
     user:
       name: "ユーザー"
       description: "特定のユーザー限定"
     user_logged_in:
       name: "ログイン中のユーザー"
       description: "ログイン中のユーザー限定"
-  rules: Rules
+  rules: ルール
   spree/order:
     coupon_code: "クーポンコード"
   user_rule:
-    choose_users: Choose users
+    choose_users: "ユーザーを選択してください"

@@ -9,12 +9,14 @@ ja:
   account_updated: "アカウントが更新されました。"
   action: "アクション"
   actions:
+    cancel: "キャンセル"
     create: "作成"
     destroy: "削除"
     list: "リスト"
     listing: "一覧"
     new: "新規"
     update: "更新"
+  activate: "アクティベートする"
   active: "有効"
   activerecord:
     attributes:
@@ -23,10 +25,10 @@ ja:
         address2: "住所2"
         city: "市区町村"
         country: "国"
-        firstname: "名"
-        first_name_start: "First Name Begins With"
-        lastname: "姓"
-        last_name_start: "Last Name Begins With"
+        firstname: "名前（名）"
+        first_name_start: "名前（名）が次の文字列で始まる"
+        lastname: "名前（姓）"
+        last_name_start: "名前（姓）が次の文字列で始まる"
         phone: "電話番号"
         state: "都道府県（州）"
         zipcode: "郵便番号"
@@ -47,8 +49,8 @@ ja:
         state: "配送先の都道府県(州)"
         zipcode: "配送先の郵便番号"
       spree/option_type:
-        name: Name
-        presentation: Presentation
+        name: 名称
+        presentation: 表示
       spree/country:
         iso: "ISO"
         iso3: "ISO3"
@@ -252,7 +254,7 @@ ja:
   are_you_sure_delete: "本当にこのレコードを削除しますか?"
   are_you_sure_delete_image: "本当にこの画像を削除しますか?"
   are_you_sure_option_type: "本当にこのオプションを削除しますか?"
-  are_you_sure_you_want_to_capture: "キャプチャを行いますか?"
+  are_you_sure_you_want_to_capture: "入金申請（キャプチャリング）を行いますか?"
   assign_taxon: "分類群を割り当てる"
   assign_taxons: "分類群を割り当てる"
   attachment_path: "Attachmentのパス"
@@ -274,8 +276,8 @@ ja:
   billing: "決済"
   billing_address: "請求先住所"
   both: "両方とも"
-  calculator: "電卓"
-  calculator_settings_warning: "電卓のタイプを変更する場合は、電卓の設定を編集する前に保存してください。"
+  calculator: "計算方法"
+  calculator_settings_warning: "計算方法のタイプを変更する場合は、計算方法の設定を編集する前に保存してください。"
   cancel: "キャンセル"
   cancel_my_account: "アカウントの削除"
   cancel_my_account_description: "本サービスについてご不満がございましたらお聞かせください。"
@@ -283,7 +285,7 @@ ja:
   cannot_create_payment_without_payment_methods: "支払い方法が選択されていないので、支払いを行うことができません"
   cannot_create_returns: "未発送の注文品に対して返品が出来ません。注文をキャンセルし注文を作り直すか問い合わせて下さい。"
   cannot_perform_operation: "処理出来ませんでした"
-  capture: "キャプチャ"
+  capture: "入金申請（キャプチャリング）"
   card_code: "カード照合値[セキュリティーコード]"
   card_details: "カード詳細"
   card_number: "カード番号"
@@ -344,18 +346,18 @@ ja:
   default_meta_keywords: "デフォルトのメタキーワード"
   default_meta_description: "デフォルトのメタデスクリプション"
   default_seo_title: "デフォルトのSEOタイトル"
-  default_tax: Default Tax
-  default_tax_zone: Default Tax Zone
+  default_tax: "デフォルトの税"
+  default_tax_zone: "デフォルトのタックスゾーン"
   delete: "削除"
   delivery: "配送/お届け"
   depth: "奥行き"
   description: "説明"
   destroy: "破壊する"
-  didnt_receive_confirmation_instructions: "Didn't receive confirmation instructions?"
-  didnt_receive_unlock_instructions: "Didn't receive unlock instructions?"
+  didnt_receive_confirmation_instructions: "アカウントの登録方法の説明を受け取っていませんか？"
+  didnt_receive_unlock_instructions: "アカウントの凍結解除方法の説明を受け取っていませんか？"
   discount_amount: "割引額"
   display: "表示"
-  dismiss_banner: "No. Thanks! I'm not interested, do not display this message again"
+  dismiss_banner: "いいえ。結構です！興味ありません。再びこのメッセージを表示しないでください。"
   edit: "編集"
   edit_general_settings: "一般設定の編集"
   editing_billing_integration: "決済の流れの編集"
@@ -406,7 +408,7 @@ ja:
       cart:
         add: "カートに入れる"
       order:
-        contents_changed: "注文内容が変わりました"
+        contents_changed: "注文内容の変更"
       user:
         signup: "ユーザー登録"
       page_view: "Static page viewed"
@@ -422,7 +424,8 @@ ja:
   finalized_payments: "確定された決済"
   first_item: "一品目の値段"
   first_name: "名前（名）"
-  first_name_begins_with: "名の始まりが"
+  first_name_begins_with: "名前（名）が以下の文字列で始まる"
+  first_name_start: "名前（名）が以下の文字列で始まる"
   flat_percent: "定率"
   flat_rate_amount: "定格"
   flat_rate_per_item: "定格(一品につき)"
@@ -484,7 +487,8 @@ ja:
   item_description: "アイテム説明"
   item_total: "合計"
   last_name: "名前（姓）"
-  last_name_begins_with: "姓の始まりが"
+  last_name_begins_with: "名前（姓）が以下の文字列で始まる"
+  last_name_start: "名前（姓）が以下の文字列で始まる"
   leave_blank_to_not_change: "(変更したくない場合は何も入力しないで下さい)"
   learn_more: "Learn More"
   list: "リスト"
@@ -508,9 +512,9 @@ ja:
   login_name: "ログイン名"
   logout: "ログアウト"
   look_for_similar_items: "似た商品を探す"
-  maestro_or_solo_cards: Maestro/Solo cards
-  mail_delivery_enabled: "Mail delivery is enabled"
-  mail_delivery_not_enabled: "Mail delivery is not enabled"
+  maestro_or_solo_cards: "Maestroカード/Soloカード"
+  mail_delivery_enabled: "メール送信は有効です"
+  mail_delivery_not_enabled: "メール送信は無効です"
   mail_methods: "メールシステムの設定"
   mail_server_preferences: "メールサーバの設定"
   make_refund: "返金する"
@@ -520,7 +524,7 @@ ja:
     none: "None"
     one: "One"
     all: "All"
-  match_rule: "Products That Must Match:"
+  match_rule: "次のルールにマッチする商品:"
   max_items: "商品の数の最大限"
   meta_description: "メタ情報説明"
   meta_keywords: "メタキーワード"
@@ -565,15 +569,15 @@ ja:
   new_zone: "新規ゾーン"
   next: "次へ"
   no_items_in_cart: "カートにアイテムがありません"
-  no_match_found: "No Match Found"
+  no_match_found: "該当する項目が見つかりませんでした。"
   no_products_found: "商品が見付かりませんでした。"
   no_results: "検索結果がありませんでした"
   no_user_found: "そのメールアドレスで登録されているユーザーがいません"
   none: "空です"
-  none_available: "None Available"
+  none_available: "空です"
   normal_amount: "通常価格"
   not: "非"
-  not_found: "%{resource} is not found"
+  not_found: "%{resource}が見つかりません"
   not_shown: "非表示"
   note: "ノート"
   notice_messages:
@@ -585,15 +589,15 @@ ja:
     variant_deleted: "種類を削除しました"
     variant_not_deleted: "種類を削除することが出来ませんでした"
   on_hand: "入荷数"
-  one_default_category_with_default_tax_rate: "You should configure exactly one default category with your countries default tax rate"
-  operation: Operation
+  one_default_category_with_default_tax_rate: "あなたの国のデフォルトの税率に対して1個のデフォルトカテゴリを設定すべきです。"
+  operation: "操作"
   option_type: "オプションタイプ"
   option_types: "オプションタイプ"
   option_value: "オプション価格"
   option_values: "オプション価格"
   options: "オプション"
   or: "もしくは"
-  or_over_price: "%{price} or over"
+  or_over_price: "%{price}以上"
   order: "注文"
   order_confirmation_note: ""
   order_date: "注文日"
@@ -612,52 +616,52 @@ ja:
   order_state:
     # keys correspond to Checkout state names:
     address: "住所"
-    adjustments: adjustments
-    awaiting_return: awaiting return
-    canceled: canceled
+    adjustments: "調整（値引き・追加請求）"
+    awaiting_return: "返品待ち"
+    canceled: "キャンセル"
     cart: "カート"
     complete: "完了"
     confirm: "確認"
     delivery: "配送"
     payment: "支払い"
-    resumed: resumed
-    returned: returned
-    skrill: skrill
-  order_summary: Order Summary
-  order_sure_want_to: "Are you sure you want to %{event} this order?"
+    resumed: "再開"
+    returned: "返品済み"
+    skrill: "スクリル（Skrill）"
+  order_summary: 注文サマリー
+  order_sure_want_to: "本当にこの注文を%{event}しますか？"
   order_total: "合計"
-  order_total_message: "The total amount charged to your card will be"
-  order_updated: "Order Updated"
+  order_total_message: "次に示す金額があなたのクレジットカードに請求されます"
+  order_updated: "注文内容が更新されました。"
   orders: "注文"
-  other_payment_options: Other Payment Options
+  other_payment_options: "他の支払いオプション"
   out_of_stock: "在庫が品切れです"
-  over_paid: "Over Paid"
+  over_paid: "過払い"
   overview: "概要"
-  page_only_viewable_when_logged_in: "ログインされていない状態でこのページが見れません。ログインしてから再びアクセスしてみて下さい。"
-  page_only_viewable_when_logged_out: "ログインされている状態でこのページが見れません。ログアウトしてから再びアクセスしてみて下さい。"
+  page_only_viewable_when_logged_in: "ログインされていない状態でこのページは見られません。ログインしてから再びアクセスしてみて下さい。"
+  page_only_viewable_when_logged_out: "ログインされている状態でこのページは見られません。ログアウトしてから再びアクセスしてみて下さい。"
   pagination:
-    previous_page: "&laquo; previous page"
-    next_page: "next page &raquo;"
+    previous_page: "&laquo; 前のページ"
+    next_page: "次のページ &raquo;"
     truncate: "&hellip;"
   paid: "支払い済み"
   parent_category: "親のカテゴリ"
   password: "パスワード"
   password_reset_instructions: "パスワード再設定について"
   password_reset_instructions_are_mailed: "パスワードの再設定方法についての説明メールを送信しました。メールの受信箱を確認して下さい。"
-  password_reset_token_not_found: "アカウントを見付けることが出来ませんでした。We're sorry, but we could not locate your account. If you are having issues try copying and pasting the URL from your email into your browser or restarting the reset password process."
+  password_reset_token_not_found: "アカウントを見付けることが出来ませんでした。メール本文からURLをコピーしてブラウザに貼り付けるか、パスワードのリセットをお試しください。"
   password_updated: "パスワードが変更されました"
   path: "パス"
   pay: "支払い"
   payment: "支払い方法"
-  payment_actions: "Actions"
+  payment_actions: "アクション"
   payment_gateway: "決済ゲートウェー"
   payment_information: "支払い情報"
   payment_method: "支払い方法"
   payment_methods: "支払い方法"
   payment_methods_setting_description: "支払い方法を管理"
   payment_processing_failed: "決済が失敗しました。入力した情報を確認してから再び決済を行ってみて下さい。"
-  payment_processor_choose_banner_text: "If you need help choosing a payment processor, please visit"
-  payment_processor_choose_link: "our payments page"
+  payment_processor_choose_banner_text: "もし決済処理会社の選択でお困りでしたら、どうぞ"
+  payment_processor_choose_link: "こちらへ"
   payment_state: "支払い状況"
   payment_states:
     balance_due: "未支払い"
@@ -669,14 +673,14 @@ ja:
     pending: "支払い待ち"
     processing: "処理中"
     void: "無効"
-  payment_updated: Payment Updated
+  payment_updated: "支払いが更新されました。"
   payments: "支払い方法"
   pending_payments: "未支払い注文"
   permalink: Permalink
   phone: "電話番号"
   place_order: "注文を送信する"
   please_create_user: "アカウントを登録して下さい"
-  please_define_payment_methods: "Please define some payment methods first."
+  please_define_payment_methods: "まず支払い方法を定義してください。"
   powered_by: "Powered by"
   presentation: "表示名"
   preview: "プレビュー"
@@ -684,9 +688,9 @@ ja:
   price: "価格"
   price_sack: Price Sack
   price_range: 価格帯
-  problem_authorizing_card: "Problem authorizing credit card"
-  problem_capturing_card: "Problem capturing credit card"
-  problems_processing_order: "We had problems processing your order"
+  problem_authorizing_card: "クレジットカードの信用照会（オーソリゼーション）で問題が発生しました"
+  problem_capturing_card: "クレジットカードの入金申請（キャプチャリング）で問題が発生しました"
+  problems_processing_order: "注文処理で問題が発生しました"
   proceed_as_guest: "今回は登録せずにゲストとして注文します"
   process: "処理する"
   product: "商品"
@@ -832,30 +836,31 @@ ja:
   reports: "リポート"
   required_for_solo_and_maestro: "SoloとMaestroカードに必要です"
   resend: "再送信"
-  resend_confirmation_instructions: "Resend confirmation instructions"
-  resend_unlock_instructions: "Resend unlock instructions"
+  resend_confirmation_instructions: "アカウントの登録方法を再送する"
+  resend_unlock_instructions: "アカウントの凍結解除方法を再送する"
   reset_password: "パスワードを再設定する"
   resource_controller:
-    member_object_not_found: "Member object not found."
+    member_object_not_found: "メンバーオブジェクトが見つかりません。"
     successfully_created: "作成完了"
     successfully_removed: "削除完了"
     successfully_updated: "更新完了"
-  response_code: "Response Code"
-  resume: "resume"
-  resumed: Resumed
+  response_code: "レスポンスコード"
+  resume: "リジューム"
+  resumed: "リジュームされた"
   return: "返品"
-  return_authorization: Return Authorization
-  return_authorization_updated: Return authorization updated
-  return_authorizations: Return Authorizations
-  return_quantity: Return Quantity
+  return_authorization: "返品承認"
+  return_authorization_updated: "返品承認が更新されました"
+  return_authorizations: "返品承認"
+  return_quantity: "返品数"
   returned: "返品済み"
-  rma_credit: RMA Credit
-  rma_number: RMA Number
-  rma_value: RMA Value
+  review: "内容を確認する"
+  rma_credit: RMAクレジット
+  rma_number: RMA番号
+  rma_value: RMA値
   roles: "役割"
   s3_access_key: "S3アクセスキー"
   s3_bucket: "S3バケット"
-  s3_headers: "S3 Headers"
+  s3_headers: "S3ヘッダ"
   s3_secret: "S3秘密鍵"
   s3_used_for_product_images: "商品画像にS3を使う"
   s3_not_used_for_product_images: "商品画像にS3を使わない"
@@ -1046,6 +1051,13 @@ ja:
   vat: "VAT"
   version: "バージョン"
   view_shipping_options: "配送方法一覧を見る"
+  views:
+    pagination:
+      truncate: "&hellip;"
+      first: 最初へ
+      previous: 前へ
+      next: 次へ
+      last: 最後へ
   void: "無効"
   website: "ウェブサイト"
   weight: "重量"

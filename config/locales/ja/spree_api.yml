@@ -1,14 +1,14 @@
 ja:
   spree:
     api:
-      must_specify_api_key: "You must specify an API key."
-      invalid_api_key: "Invalid API key (%{key}) specified."
-      unauthorized: "You are not authorized to perform that action."
-      invalid_resource: "Invalid resource. Please fix errors and try again."
-      resource_not_found: "The resource you were looking for could not be found."
-      gateway_error: "There was a problem with the payment gateway: %{text}"
-      credit_over_limit: "This payment can only be credited up to %{limit}. Please specify an amount less than or equal to this number."
+      must_specify_api_key: "APIキーを指定してください。"
+      invalid_api_key: "指定されたAPIキー(%{key})が正しくありません。"
+      unauthorized: "このアクションを実行する権限がありません。"
+      invalid_resource: "不正なリソースです。エラーを修正して再度お試しください。"
+      resource_not_found: "お探しのリソースが見つかりませんでした。"
+      gateway_error: "支払いゲートウェイで以下の問題が発生しました: %{text}"
+      credit_over_limit: "%{limit}までお支払い可能です。これ以下の金額を指定してください。"
 
       order:
-        could_not_transition: "The order could not be transitioned. Please fix the errors and try again."
-        invalid_shipping_method: "Invalid shipping method specified."
+        could_not_transition: "注文手続きを進められませんでした。エラーを修正して再度お試しください。"
+        invalid_shipping_method: "不正な配送方法が指定されました。"
