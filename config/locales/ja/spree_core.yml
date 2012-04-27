@@ -224,9 +224,9 @@ ja:
   additional_item: "2品目からの値段増加"
   address: "住所"
   address_information: "住所情報"
-  adjustment: "調整"
-  adjustment_total: "修正総額"
-  adjustments:
+  adjustment: "調整（値引き・追加料金）"
+  adjustment_total: "調整（値引き・追加料金）総額"
+  adjustments: "調整（値引き・追加料金）"
   administration: "管理"
   admin:
     mail_methods:
@@ -244,7 +244,7 @@ ja:
   already_registered: "すでに登録されています"
   alt_text: "代替のテキスト"
   alternative_phone: "代替の電話番号"
-  amount: "個数"
+  amount: "金額"
   analytics_trackers: "アナリティクストラッカー"
   and: "と"
   apply: "確定"
@@ -527,10 +527,10 @@ ja:
   name: "名称"
   name_or_sku: "品名もしくは品番"
   new: "新規"
-  new_adjustment: "新規修正"
+  new_adjustment: "新規の値引き・追加請求"
   new_category: "新規カテゴリー"
   new_customer: "新規顧客"
-  new_group: "New Group"
+  new_group: "新規グループ"
   new_image: "新規画像"
   new_mail_method: "新規メール方法"
   new_option_type: "新規オプションタイプ"
@@ -605,7 +605,7 @@ ja:
   order_state:
     # keys correspond to Checkout state names:
     address: "住所"
-    adjustments: "調整（値引き・追加請求）"
+    adjustments: "調整（値引き・追加料金）"
     awaiting_return: "返品待ち"
     canceled: "キャンセル"
     cart: "カート"
