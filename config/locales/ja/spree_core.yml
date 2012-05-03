@@ -154,8 +154,8 @@ ja:
         one: "在庫品単位"
         other: "在庫品単位"
       spree/line_item:
-        one: "Line Item"
-        other: "Line Items"
+        one: "項目"
+        other: "項目"
       spree/order:
         one: "注文"
         other: "注文"
@@ -707,113 +707,114 @@ ja:
   product_scopes:
     groups:
       price:
-        description: "Scopes for selecting products based on Price"
+        description: "値段を基準に商品を選ぶためのスコープ"
         name: "値段"
       search:
-        description: "Scopes for selecting products based on name, keywords and description of product"
-        name: "Text search"
+        description: "名前、キーワード、商品説明を基準に商品を選ぶためのスコープ"
+        name: "テキストサーチ"
       taxon:
-        description: "Scopes for selecting products based on Taxons"
-        name: Taxon
+        description: "分類を基準に商品を選ぶためのスコープ"
+        name: "分類"
       values:
-        description: "Scopes for selecting products based on option and property values"
-        name: Values
+        description: "オプションとプロパティの値を基準に商品を選ぶためのスコープ"
+        name: "値"
     scopes:
       ascend_by_name:
-        name: Ascend by product name
+        name: 名前で昇順
       ascend_by_updated_at:
-        name: Ascend by actualization date
+        name: 実施日で昇順
       descend_by_name:
-        name: Descend by product name
+        name: 名前で降順
       descend_by_updated_at:
-        name: Descend by actualization date
+        name: 実施日で降順
       in_name:
         args:
-          words: Words
-        description: "(separated by space or comma)"
-        name: "Product name have following"
-        sentence: product name contain <em>%s</em>
+          words: 単語リスト
+        description: "(スペースまたはコンマで区切る)"
+        name: "以下の文字列を含む商品名"
+        sentence: "商品名が<em>%s</em>を含む"
       in_name_or_description:
         args:
-          words: Words
-        description: "(separated by space or comma)"
-        name: "Product name or description have following"
-        sentence: name or description contain <em>%s</em>
+          words: 単語リスト
+        description: "(スペースまたはコンマで区切る)"
+        name: "以下の文字列を含む商品名または商品説明"
+        sentence: "名前または説明が<em>%s</em>を含む"
       in_name_or_keywords:
         args:
-          words: Words
-        description: "(separated by space or comma)"
-        name: "Product name or meta keywords have following"
-        sentence: name or keywords contain <em>%s</em>
+          words: 単語リスト
+        description: "(スペースまたはコンマで区切る)"
+        name: "以下の文字列を含む商品名またはメタキーワード"
+        sentence: "名前またはキーワードが<em>%s</em>を含む"
       in_taxons:
         args:
-          "taxon_names": "Taxon names"
-        description: "Taxon names have to be separated by comma or space(eg. adidas,shoes)"
-        name: "In taxons and all their descendants"
-        sentence: in <em>%s</em> and all their descendants
+          words: 分類名のリスト
+        description: "分類名のリストはコンマまたはスペースで区切られなければなりません(例: アディダス,靴)"
+        name: "分類リストとそのすべての下位分類に属する"
+        sentence: "<em>%s</em>とそのすべての下位分類に属する"
       master_price_gte:
         args:
-          amount: Amount
+          amount: 金額
         description: ""
-        name: "Master price greater or equal to"
-        sentence: price greater or equal to <em>%.2f</em>
+        name: "マスター価格が次の金額以上"
+        sentence: "<em>%.2f</em>以上の価格"
       master_price_lte:
         args:
-          amount: Amount
+          amount: 金額
         description: ""
-        name: "Master price lesser or equal to"
-        sentence: price less or equal to <em>%.2f</em>
+        name: "マスター価格が次の金額以下"
+        sentence: "<em>%.2f</em>以下の価格"
       price_between:
         args:
-          high: High
-          low: Low
+          high: 上限値
+          low: 下限値
         description: ""
-        name: "Price between"
-        sentence: price between <em>%.2f</em> and <em>%.2f</em>
+        name: "価格がある範囲にある"
+        sentence: "<em>%.2f</em>〜<em>%.2f</em>の価格"
       taxons_name_eq:
         args:
-          taxon_name: "Taxon name"
-        description: "In specific taxon - without descendants"
-        name: "In Taxon(without descendants)"
-        sentence: in <em>%s</em>
+          taxon_name: "分類名"
+        description: "特定の分類（下位分類を除く）"
+        name: "分類（下位分類を除く）"
+        sentence: "<em>%s</em>に属する"
       with:
         args:
-          value: Value
-        description: "Select specific products"
-        name: Products with IDs
-        sentence: with IDs <em>%s</em>
+          value: 値
+        description: "特定の商品を選択してください"
+        name: "次のIDを持つ商品"
+        sentence: "ID <em>%s</em> を持つ"
       with_ids:
         args:
-          ids: IDs
-        description: "Select specific products"
-        name: Products with IDs
-        sentence: with IDs <em>%s</em>
+          ids: IDリスト
+        description: "特定の商品を選択してください"
+        name: "次のIDを持つ商品"
+        sentence: "ID <em>%s</em> を持つ"
       with_option:
         args:
-          option: Option
-        description: "Selects all products that have specified option(eg. color)"
-        name: "With option"
-        sentence: with option <em>%s</em>
+          option: オプション
+        description: "特定のオプション（例: 色）を持つすべての商品を選ぶ"
+        name: "オプション"
+        sentence: "オプション <em>%s</em> を持つ"
       with_option_value:
         args:
-          option: Option
-          value: Value
-        description: "Selects all products that have at least one variant with specified option and value(eg. color:red)"
-        name: "With option and value"
-        sentence: with option <em>%s</em> and value <em>%s</em>
+          option: オプション
+          value: 値
+        description: "少なくとも一つの種類が特定のオプションと値を持つすべての商品を選ぶ"
+        name: "オプションと値"
+        sentence: "オプション <em>%s</em> と値 <em>%s</em> を持つ"
       with_property:
         args:
-          property: Property
-        description: "Selects all products that have specified property(eg. weight)"
-        name: "With property"
-        sentence: with property <em>%s</em>
+          property: プロパティ
+        description: "特定のプロパティ（例: 重さ）を持つ種類が少なくとも１つある商品をすべて選ぶ"
+        name: "プロパティ"
+        sentence: "プロパティ <em>%s</em> を持つ"
       with_property_value:
         args:
-          property: Property
-          value: Value
+          property: プロパティ
+          value: 値
         description: "Selects all products that have at least one variant with specified property and value(eg. weight:10kg)"
-        name: "With property value"
-        sentence: with property <em>%s</em> and value <em>%s</em>
+        description: "特定のプロパティと値（例: 重さ/10kg）を持つ種類が少なくとも１つある商品をすべて選ぶ"
+        name: "プロパティと値"
+        sentence: "プロパティ <em>%s</em> と値 <em>%s</em>"
   products: "商品"
   products_with_zero_inventory_display: "在庫なしの商品が%{not}表示されます"
   properties: "属性"
@@ -821,7 +822,7 @@ ja:
   prototype: "プロトタイプ"
   prototypes: "プロトタイプ"
   provider: "プロバイダー"
-  provider_settings_warning: "If you are changing the provider type, you must save first before you can edit the provider settings"
+  provider_settings_warning: "プロバイダータイプを変更する時は、プロバイダー設定を編集する前に保存しなければなりません。"
   qty: "個数"
   quantity_returned: "返送された数"
   quantity_shipped: "発送された数"

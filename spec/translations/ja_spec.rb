@@ -17,9 +17,19 @@ describe "Japanese (ja) translations" do
   
   describe "spree_core.yml" do
     subject { "config/locales/ja/spree_core.yml" }
+    let(:untranslated_keys) do
+      [ 
+        "activerecord.attributes.spree/country.iso",
+        "activerecord.attributes.spree/country.iso3"
+      ]
+    end
+    
     it { subject.should be_a_subset_of("default/spree_core.yml") }
     it { subject.should be_a_complete_translation_of("default/spree_core.yml") }
-    it { pending; subject.should be_a_thorough_translation_of("default/spree_core.yml").except([]) }
+    it do
+      subject.should be_a_thorough_translation_of("default/spree_core.yml").
+        except(untranslated_keys)
+    end
   end
   
   describe "spree_dash.yml" do
