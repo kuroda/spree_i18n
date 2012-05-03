@@ -4,7 +4,7 @@ module SpreeI18n
       SpreeI18n::Railtie.instance_eval do
         pattern = pattern_from app.config.i18n.available_locales
 
-        add("config/locales/#{pattern}/*.yml")
+        add("config/locales/#{pattern}/*.{rb,yml}")
       end
     end
 

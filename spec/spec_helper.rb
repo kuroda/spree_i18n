@@ -2,6 +2,7 @@ ENV["RAILS_ENV"] = "test"
 
 require 'yaml'
 require 'rspec'
+require 'i18n'
 require 'i18n-spec'
 require 'i18n/core_ext/hash'
 require 'active_support/core_ext/kernel/reporting'
