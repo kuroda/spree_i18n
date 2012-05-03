@@ -5,29 +5,34 @@ describe "Japanese (ja) translations" do
     subject { "config/locales/ja/spree_api.yml" }
     it { subject.should be_a_subset_of("default/spree_api.yml") }
     it { subject.should be_a_complete_translation_of("default/spree_api.yml") }
+    it { subject.should be_a_thorough_translation_of("default/spree_api.yml").except([]) }
   end
   
   describe "spree_auth.yml" do
     subject { "config/locales/ja/spree_auth.yml" }
     it { subject.should be_a_subset_of("default/spree_auth.yml") }
     it { subject.should be_a_complete_translation_of("default/spree_auth.yml") }
+    it { subject.should be_a_thorough_translation_of("default/spree_auth.yml").except([]) }
   end
   
   describe "spree_core.yml" do
     subject { "config/locales/ja/spree_core.yml" }
     it { subject.should be_a_subset_of("default/spree_core.yml") }
     it { subject.should be_a_complete_translation_of("default/spree_core.yml") }
+    it { pending; subject.should be_a_thorough_translation_of("default/spree_core.yml").except([]) }
   end
   
   describe "spree_dash.yml" do
     subject { "config/locales/ja/spree_dash.yml" }
     it { subject.should be_a_subset_of("default/spree_dash.yml") }
     it { subject.should be_a_complete_translation_of("default/spree_dash.yml") }
+    it { subject.should be_a_thorough_translation_of("default/spree_dash.yml").except([]) }
   end
   
   describe "spree_promo.yml" do
     subject { "config/locales/ja/spree_promo.yml" }
     it { subject.should be_a_subset_of("default/spree_promo.yml") }
     it { subject.should be_a_complete_translation_of("default/spree_promo.yml") }
+    it { subject.should be_a_thorough_translation_of("default/spree_promo.yml").except([]) }
   end
 end
