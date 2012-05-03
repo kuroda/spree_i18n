@@ -20,7 +20,12 @@ describe "Japanese (ja) translations" do
     let(:untranslated_keys) do
       [ 
         "activerecord.attributes.spree/country.iso",
-        "activerecord.attributes.spree/country.iso3"
+        "activerecord.attributes.spree/country.iso3",
+        "pagination.truncate",
+        "powered_by",
+        "smtp",
+        "spree.date_picker.format",
+        "views.pagination.truncate"
       ]
     end
     
