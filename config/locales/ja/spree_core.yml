@@ -212,9 +212,9 @@ ja:
   add_country: "国の追加"
   add_new_header: "新規ヘッダの追加"
   add_new_style: "新規スタイルの追加"
-  add_option_type: "オプション類を追加"
-  add_option_types: "複数のオプション類を追加"
-  add_option_value: "オプションの値を追加"
+  add_option_type: "選択項目を追加"
+  add_option_types: "選択項目を追加します"
+  add_option_value: "選択肢を追加"
   add_product: "新規商品の追加"
   add_product_properties: "商品に属性を追加"
   add_scope: "範囲を追加"
@@ -253,7 +253,7 @@ ja:
   are_you_sure_category: "本当にこのカテゴリを削除しますか?"
   are_you_sure_delete: "本当にこのレコードを削除しますか?"
   are_you_sure_delete_image: "本当にこの画像を削除しますか?"
-  are_you_sure_option_type: "本当にこのオプションを削除しますか?"
+  are_you_sure_option_type: "本当にこの選択項目を削除しますか?"
   are_you_sure_you_want_to_capture: "入金申請（キャプチャリング）を行いますか?"
   assign_taxon: "分類を割り当てる"
   assign_taxons: "分類を割り当てる"
@@ -365,8 +365,8 @@ ja:
   editing_billing_integration: "ビリングインテグレーションの編集"
   editing_category: "カテゴリーの編集"
   editing_mail_method: "メール方法の編集"
-  editing_option_type: "オプション類の編集"
-  editing_option_types: "オプション類の編集"
+  editing_option_type: "選択項目の編集"
+  editing_option_types: "選択項目の編集"
   editing_payment_method: "決済方法の編集"
   editing_product: "商品の編集"
   editing_product_group: "商品の分類群の編集"
@@ -496,7 +496,7 @@ ja:
   learn_more: "もっと詳しく"
   list: "リスト"
   listing_categories: "カテゴリー一覧"
-  listing_option_types: "オプション類一覧"
+  listing_option_types: "選択項目一覧"
   listing_orders: "注文一覧"
   listing_products: "商品一覧"
   listing_product_groups: "商品分類群一覧"
@@ -547,8 +547,8 @@ ja:
   new_group: "新規グループ"
   new_image: "新規画像"
   new_mail_method: "新規メール方法"
-  new_option_type: "新規オプションタイプ"
-  new_option_value: "新規オプション値"
+  new_option_type: "新規選択項目"
+  new_option_value: "新規選択肢"
   new_order: "新規注文"
   new_order_completed: "新規注文作成完了"
   new_payment: "新規の支払い"
@@ -576,15 +576,15 @@ ja:
   no_products_found: "商品が見付かりませんでした。"
   no_results: "検索結果がありませんでした"
   no_user_found: "そのメールアドレスで登録されているユーザーがいません"
-  none: "空です"
-  none_available: "空です"
+  none: "登録されていません"
+  none_available: "ありません"
   normal_amount: "通常価格"
   not: "非"
   not_found: "%{resource}が見つかりません"
   not_shown: "非表示"
   note: "ノート"
   notice_messages:
-    option_type_removed: "オプション類を削除しました。"
+    option_type_removed: "選択項目を削除しました。"
     product_cloned: "商品を複製しました"
     product_deleted: "商品を削除しました"
     product_not_cloned: "商品を複製することが出来ませんでした"
@@ -594,10 +594,10 @@ ja:
   on_hand: "入荷数"
   one_default_category_with_default_tax_rate: "あなたの国のデフォルトの税率に対して1個のデフォルトカテゴリを設定すべきです。"
   operation: "操作"
-  option_type: "オプションタイプ"
-  option_types: "オプションタイプ"
-  option_value: "オプション価格"
-  option_values: "オプション価格"
+  option_type: "選択項目"
+  option_types: "選択項目"
+  option_value: "選択肢"
+  option_values: "選択肢"
   options: "オプション"
   or: "もしくは"
   or_over_price: "%{price}以上"
@@ -715,7 +715,7 @@ ja:
         description: "分類を基準に商品を選ぶためのスコープ"
         name: "分類"
       values:
-        description: "オプションとプロパティの値を基準に商品を選ぶためのスコープ"
+        description: "選択項目とプロパティの値を基準に商品を選ぶためのスコープ"
         name: "値"
     scopes:
       ascend_by_name:
@@ -789,17 +789,17 @@ ja:
         sentence: "ID <em>%s</em> を持つ"
       with_option:
         args:
-          option: オプション
-        description: "特定のオプション（例: 色）を持つすべての商品を選ぶ"
-        name: "オプション"
-        sentence: "オプション <em>%s</em> を持つ"
+          option: 選択項目
+        description: "特定の選択項目（例: 色）を持つすべての商品を選ぶ"
+        name: "選択項目"
+        sentence: "選択項目 <em>%s</em> を持つ"
       with_option_value:
         args:
-          option: オプション
+          option: 選択項目
           value: 値
-        description: "少なくとも一つの種類が特定のオプションと値を持つすべての商品を選ぶ"
-        name: "オプションと値"
-        sentence: "オプション <em>%s</em> と値 <em>%s</em> を持つ"
+        description: "少なくとも一つの種類が特定の選択項目と値を持つすべての商品を選ぶ"
+        name: "選択項目と値"
+        sentence: "選択項目 <em>%s</em> と値 <em>%s</em> を持つ"
       with_property:
         args:
           property: プロパティ
@@ -810,7 +810,6 @@ ja:
         args:
           property: プロパティ
           value: 値
-        description: "Selects all products that have at least one variant with specified property and value(eg. weight:10kg)"
         description: "特定のプロパティと値（例: 重さ/10kg）を持つ種類が少なくとも１つある商品をすべて選ぶ"
         name: "プロパティと値"
         sentence: "プロパティ <em>%s</em> と値 <em>%s</em>"
