@@ -150,12 +150,18 @@ en:
       spree/creditcard_txn:
         one: "Credit Card Transaction"
         other: "Credit Card Transactions"
+      spree/image:
+        one: "Image"
+        other: "Images"
       spree/inventory_unit:
         one: "Inventory Unit"
         other: "Inventory Units"
       spree/line_item:
         one: "Line Item"
         other: "Line Items"
+      spree/option_type:
+        one: "Option Type"
+        other: "Option Types"
       spree/order:
         one: Order
         other: Orders

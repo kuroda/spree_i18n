@@ -150,12 +150,18 @@ ja:
       spree/creditcard_txn:
         one: "クレジットカード決済"
         other: "クレジットカード決済"
+      spree/image:
+        one: "画像"
+        other: "画像"
       spree/inventory_unit:
         one: "在庫品単位"
         other: "在庫品単位"
       spree/line_item:
         one: "品目"
         other: "品目"
+      spree/option_type:
+        one: "選択項目"
+        other: "選択項目"
       spree/order:
         one: "注文"
         other: "注文"
@@ -265,7 +271,7 @@ ja:
   authorized: "認証されました"
   availability: "在庫の有無"
   available_on: "発売開始日・入荷日"
-  available_taxons: "使用可能な分類群"
+  available_taxons: "使用可能な分類"
   awaiting_return: "返品待ち"
   back: "戻る"
   back_end: "バックエンド"
@@ -715,7 +721,7 @@ ja:
         description: "分類を基準に商品を選ぶためのスコープ"
         name: "分類"
       values:
-        description: "選択項目とプロパティの値を基準に商品を選ぶためのスコープ"
+        description: "選択項目と属性の値を基準に商品を選ぶためのスコープ"
         name: "値"
     scopes:
       ascend_by_name:
@@ -802,17 +808,17 @@ ja:
         sentence: "選択項目 <em>%s</em> と値 <em>%s</em> を持つ"
       with_property:
         args:
-          property: プロパティ
-        description: "特定のプロパティ（例: 重さ）を持つ種類が少なくとも１つある商品をすべて選ぶ"
-        name: "プロパティ"
-        sentence: "プロパティ <em>%s</em> を持つ"
+          property: 属性
+        description: "特定の属性（例: 重さ）を持つ種類が少なくとも１つある商品をすべて選ぶ"
+        name: "属性"
+        sentence: "属性 <em>%s</em> を持つ"
       with_property_value:
         args:
-          property: プロパティ
+          property: 属性
           value: 値
-        description: "特定のプロパティと値（例: 重さ/10kg）を持つ種類が少なくとも１つある商品をすべて選ぶ"
-        name: "プロパティと値"
-        sentence: "プロパティ <em>%s</em> と値 <em>%s</em>"
+        description: "特定の属性と値（例: 重さ/10kg）を持つ種類が少なくとも１つある商品をすべて選ぶ"
+        name: "属性と値"
+        sentence: "属性 <em>%s</em> と値 <em>%s</em>"
   products: "商品"
   properties: "属性"
   property: "属性"
@@ -1009,7 +1015,7 @@ ja:
   there_were_problems_with_the_following_fields: "以下の入力欄で問題がありました"
   this_file_language: "日本語 (ja-JP)"
   thumbnail: "サムネール"
-  to_add_variants_you_must_first_define: "種類を追加するには、まずそれを定義する必要があります。"
+  to_add_variants_you_must_first_define: "種類を追加するには、まず次のものを定義する必要があります。"
   to_state: "変更後の状態"
   total: "合計"
   tracking: "トラッキング"
